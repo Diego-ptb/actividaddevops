@@ -119,8 +119,8 @@ jobs:
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
         run: |
           mvn verify sonar:sonar \
-            -Dsonar.projectKey=TU_ORG_bdget-jacoco \
-            -Dsonar.organization=TU_ORG \
+            -Dsonar.projectKey=diego-ptb_actividaddevops \
+            -Dsonar.organization=diego-ptb \
             -Dsonar.host.url=https://sonarcloud.io \
             -Dsonar.token=$SONAR_TOKEN \
             -Dsonar.coverage.jacoco.xmlReportPaths=target/site/jacoco/jacoco.xml
